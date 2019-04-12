@@ -1,0 +1,23 @@
+button {
+  border: 0;
+  border-radius: 2px;
+  background: #05a3dd;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-color .2s linear;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  height: 40px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 13px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
