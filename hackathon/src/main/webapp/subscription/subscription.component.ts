@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {User} from "../user";
-import {Product} from "../product";
+import {User} from "../src/app/user";
+import {Product} from "../src/app/product";
 
 @Component({
   selector: 'app-subscription',
