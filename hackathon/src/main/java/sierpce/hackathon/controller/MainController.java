@@ -40,25 +40,30 @@ public class MainController {
     @RequestMapping(value = "/produkt")
     public ModelAndView getProductPage(){
         ModelAndView mav = new ModelAndView("productView");
+        mav.addObject("product",productService.getProduct());
         return mav;
     }
 
-    @RequestMapping(value = "/subskrybcja/edytuj")
+    @RequestMapping(value = "/subskrypcja/edytuj")
     public ModelAndView getSubscriptionSummary(){
         ModelAndView mav = new ModelAndView("productOrder");
+        Subscription subscription = new Subscription();
+//        subscription.setUser(userService.getUser());
+//        subscription.setProduct(productService.getProduct());
+        mav.addObject(subscription);
         return mav;
     }
 
-    @RequestMapping(value = "/subskrypcja/podsumowanie")
-    public ModelAndView getSummary(){
+    @PostMapping(value = "/subskrypcja/podsumowanie")
+    public ModelAndView getSummary(@ModelAttribute("subscription")Subscription subscription){
         ModelAndView mav = new ModelAndView("productOrderSummary");
+        subscriptionService.addSubscription(subscription);
         return mav;
     }
 
-    @PostMapping(value = "/subskrybcja/potwierdz")
-    public ModelAndView saveSubscription(@ModelAttribute("subscription")Subscription subscription){
+    @RequestMapping(value = "/subskrybcja/potwierdz")
+    public ModelAndView saveSubscription(){
         ModelAndView mav = new ModelAndView("redirect:/mojesubskrypcje");
-        subscriptionService.addSubscription(subscription);
         return mav;
     }
 
