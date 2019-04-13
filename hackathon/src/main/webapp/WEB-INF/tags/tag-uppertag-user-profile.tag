@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://www.googletagservices.com">
         <link rel="preconnect" href="https://adservice.google.com">
 
+
         <link rel="preload" href="https://assets.allegrostatic.com/metrum/list/main-9b55cb7259.m.css" as="style"
         nonce="" crossorigin="">
         <link rel="preload" href="https://assets.allegrostatic.com/metrum/spinner/main-b5dfee8649.m.css" as="style"
@@ -4287,7 +4288,7 @@
         data-visible-for="5855" data-seen="true"><a name="myallegro-desktop-main-navigation-tablinks"></a><div
         class="_2508c_3DHQn _2508c_2dY2J"><nav class="_2508c_24gIB _2508c_eoY7F"><div class="_2508c_QqsjJ _3a4zn _x0toz
         _2508c_2g3mo"><a class="_sm3us _1241k _x0toz" href="/dashboard/myorders/#/" title="MOJE ZAKUPY"
-        data-analytics-click-custom-index-0="0" data-analytics-clickable="">MOJE ZAKUPY</a></div><div
+        data-analytics-click-custom-index-0="0" data-analytics-clickable="">MOJE SUBSKRYBCJE</a></div><div
         class="_2508c_QqsjJ _3a4zn"><a class="_sm3us _1241k" href="/myaccount/sell.php" title="MOJA SPRZEDAŻ"
         data-analytics-click-custom-index-0="1" data-analytics-clickable="">MOJA SPRZEDAŻ</a></div><div
         class="_2508c_QqsjJ _3a4zn"><a class="_sm3us _1241k" href="/moje-konto" title="MOJE KONTO"
@@ -4307,10 +4308,10 @@
         data-visible-for="5944" data-seen="true"><a name="allegro-navigation-accordion"></a><div
         data-box-slug="allegro-navigation-accordion" class="_1djfw _1p352"><div data-id="licytacje-i-kup-teraz"
         class="_1gd95"><div class="_anof8" data-name="accordion-panel" data-analytics-interaction=""
-        data-analytics-interaction-label="open"><h5 href="#" class="_1f21n _tl3pi _1sjrk">Licytacje i Kup Teraz<i
+        data-analytics-interaction-label="open"><h5 href="#" class="_1f21n _tl3pi _1sjrk">Moje subskrypcje<i
         class="_1ukoz _183de _1f16d _121f1 _1m7tw" title="arrowhead"></i></h5></div> <div data-name="accordion-content"
         class="_e2q26 _15m0v"><ul class="_3a4zn _1rj80 _12vfa"><li class="_1bmp9"><a href="/moje-allegro/zakupy/kupione"
-        data-analytics-clickable="" class="_sm3us _17qy1 _sizcr _1241k _x0toz">Kupione
+        data-analytics-clickable="" class="_sm3us _17qy1 _sizcr _1241k _x0toz">Aktywne
         </a></li><li class="_1bmp9"><a href="/myaccount/bid.php" data-analytics-clickable="" class="_sm3us _17qy1 _sizcr
         _1241k">Licytuję
         </a></li><li class="_1bmp9"><a href="/myaccount/notwon.php" data-analytics-clickable="" class="_sm3us _17qy1
