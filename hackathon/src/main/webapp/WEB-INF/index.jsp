@@ -313,8 +313,10 @@
 
 </form>
 
-
-    <button class="subBut" style="margin-top: -6px" data-analytics-interaction="true" data-analytics-interaction-label="PreBuyNow" data-analytics-interaction-value="7612747638" data-analytics-interaction-custom-flow="PurchasingProcess" type="submit" formaction="/subskrypcja/edytuj">SUBSKRYBUJ</button>
+    <form action="subskrypcja/edytuj" method=get>
+    <button class="subBut" style="margin-top: -6px" data-analytics-interaction="true"
+            data-analytics-interaction-label="PreBuyNow" data-analytics-interaction-value="7612747638" data-analytics-interaction-custom-flow="PurchasingProcess" type="submit" >SUBSKRYBUJ</button>
+    </form>
     <div class="_0d70060d _4eca6ea2"><strong>Allegro gwarantuje bezpieczne zakupy</strong><div class="b94c6a5b">Otrzymasz kupiony przedmiot albo zwrócimy Ci pieniądze. <a class="_442a6328 b94c6a5b" rel="noopener noreferrer" href="https://dlakupujacych.allegro.pl/bezpieczenstwo/program-ochrony-kupujacych/warunki-skorzystania" target="_blank">Sprawdź szczegóły</a>.</div></div></div></div><script>
     if (window.performance && window.performance.mark && typeof requestAnimationFrame === "function") {
         requestAnimationFrame(function () {

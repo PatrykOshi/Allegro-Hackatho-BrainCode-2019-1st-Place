@@ -44,7 +44,7 @@ public class MainController {
         return mav;
     }
 
-    @RequestMapping(value = "/subskrybcja/edytuj")
+    @RequestMapping(value = "/subskrypcja/edytuj")
     public ModelAndView getSubscriptionSummary(){
         ModelAndView mav = new ModelAndView("productOrder");
         Subscription subscription = new Subscription();
