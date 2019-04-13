@@ -1,8 +1,10 @@
 Allegro Subskrypcje
 =====
+
 Cykliczne, zautomatyzowane zakupy w modelu subskrypcyjnym - od teraz na Allegro.
 
 ####Jak to działa
+
 1. Przy wybranych produktach obok znanej opcji *Kup teraz* dostępna jest nowa akcja **_Subskrybuj_**
 2. Kliknięcie **_Subskrybuj_** przenosi użytkownika do ekranu szczegółów:
     * częstotliwości realizacji zamówienia (np. co miesiąc)
@@ -15,10 +17,12 @@ Cykliczne, zautomatyzowane zakupy w modelu subskrypcyjnym - od teraz na Allegro.
     * może odwołać subskrypcję
 
 ####Korzyści
+
 #####Dla użytkowników
 * **wygoda** - raz stworzone zamówienie subskrypcyjne jest regularnie składane, nie wymaga akcji
 * **oszczędność czasu**
 * **oszczędność pieniędzy** - algorytm Allegro wyszuka najtańszą ofertę na subskrybowany produkt i zamówi właśnie tę
 * **bezpieczeństwo** - system nie składa zamówienia jeśli subskrybowany produkt nie jest dostępny w granicach ustalonej przez użytkownika ceny maksymalnej (wysyłane jest powiadomienie mailem)
+
 #####Dla Allegro
 * **zwiększenie liczby zamówień** - użytkownicy nie muszą pamiętać o ich złożeniu, złożą się same - automatycznie
