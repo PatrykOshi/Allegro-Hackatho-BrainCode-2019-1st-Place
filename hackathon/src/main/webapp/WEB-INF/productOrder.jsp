@@ -3,7 +3,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib tagdir="/WEB-INF/tags/" prefix="h" %>
 <html class="m-type gr__localhost"><head><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
-    <base href="https://allegro.pl/transaction-front/">        <title>Allegro.pl - WiÄ™cej niÅ¼ aukcje. Najlepsze oferty na najwiÄ™kszej platformie handlowej.</title>
+    <base href="https://allegro.pl/transaction-front/">        <title>Allegro.pl - więcej niż aukcje. Najlepsze
+        oferty na
+        największej platformie handlowej.</title>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
@@ -16,7 +18,9 @@
             var LOCALE = {
                 PL: {
                     countryCode: 'PL',
-                    title: 'Allegro.pl - WiÄ™cej niÅ¼ aukcje. Najlepsze oferty na najwiÄ™kszej platformie handlowej.'
+                    title: 'Allegro.pl - więcej niż aukcje. Najlepsze \n' +
+                    '        oferty na\n' +
+                    '        największej platformie handlowej.'
                 }
             };
             var CONFIG = {
@@ -648,12 +652,15 @@
   "ng-reflect-ng-if": "false"
 }--></info-modal></section><!----><!----><!----></add-to-cart-info-modal>
                                                         </m-custom-additional-element-above-primary-button></ng-transclude>
-                                                        <ng-transclude ng-transclude-slot="mPrimaryButton"><m-primary-button id="confirm-dapf-btn" ng-class="{'m-button--installments': dapf.isInstallmentsLimit()  || dapf.isInstallmentsSelected() || dapf.isInstallmentsOnlyFlag()}" m-on-click="dapf.submitDapf(purchase.dapfForm)" m-disabled="purchase.isUpdateInProgress || dapf.isDapfSubmitBtnDisabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress" m-spinner="purchase.isUpdateInProgress || dapf.isSubmitBtnSpinnerEnabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress"><button class="m-button m-button--primary m-button--wide m-button--spinner" type="button" ng-click="$ctrl.onClick()" ng-disabled="$ctrl.mDisabled">
+                                                        <ng-transclude
+                                                                ng-transclude-slot="mPrimaryButton"><m-primary-button
+                                                                id="confirm-dapf-btn"
+                                                                ng-class="{'m-button--installments': dapf.isInstallmentsLimit()  || dapf.isInstallmentsSelected() || dapf.isInstallmentsOnlyFlag()}" m-on-click="dapf.submitDapf(purchase.dapfForm)" m-disabled="purchase.isUpdateInProgress || dapf.isDapfSubmitBtnDisabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress" m-spinner="purchase.isUpdateInProgress || dapf.isSubmitBtnSpinnerEnabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress"><a href="http://localhost:8080/subskrypcja/opcje" class="m-button m-button--primary m-button--wide m-button--spinner"  ng-click="$ctrl.onClick()" ng-disabled="$ctrl.mDisabled">
                                                             <span class="m-spinner m-button__spinner" ng-class="{'m-display-block': $ctrl.mSpinner}"></span>
                                                             <ng-transclude>
-                                                                <span>Podsumowanie subskrypcji</span>
+                                                                <span>Opcje subskrypcji</span>
                                                             </ng-transclude>
-                                                        </button></m-primary-button></ng-transclude>
+                                                        </a></m-primary-button></ng-transclude>
                                                         <ng-transclude ng-transclude-slot="mCustomPrimaryButton"></ng-transclude>
                                                     </div>
                                                 </div>

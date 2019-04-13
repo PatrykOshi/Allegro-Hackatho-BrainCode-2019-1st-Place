@@ -33,7 +33,7 @@ public class MainController {
     @RequestMapping
     //TODO api + attributes
     public ModelAndView getMainPage(){
-        ModelAndView mav = new ModelAndView("subscriptionDetails");
+        ModelAndView mav = new ModelAndView("index");
         return mav;
     }
 
@@ -54,7 +54,14 @@ public class MainController {
         return mav;
     }
 
-    @PostMapping(value = "/subskrypcja/podsumowanie")
+    @GetMapping(value = "/subskrypcja/opcje")
+    public ModelAndView getSubOption(@ModelAttribute("subscription")Subscription subscription){
+        ModelAndView mav = new ModelAndView("subscriptionDetails");
+        subscriptionService.addSubscription(subscription);
+        return mav;
+    }
+
+    @GetMapping(value = "/subskrypcja/podsumowanie")
     public ModelAndView getSummary(@ModelAttribute("subscription")Subscription subscription){
         ModelAndView mav = new ModelAndView("productOrderSummary");
         subscriptionService.addSubscription(subscription);
