@@ -4309,15 +4309,19 @@
         data-visible-for="5944" data-seen="true"><a name="allegro-navigation-accordion"></a><div
         data-box-slug="allegro-navigation-accordion" class="_1djfw _1p352"><div data-id="licytacje-i-kup-teraz"
         class="_1gd95"><div class="_anof8" data-name="accordion-panel" data-analytics-interaction=""
-        data-analytics-interaction-label="open"><h5 href="#" class="_1f21n _tl3pi _1sjrk">Moje subskrypcje<i
+        data-analytics-interaction-label="open"><h5 href="#" class="_1f21n _tl3pi _1sjrk">Licytacje, Kup
+                Teraz i Subskrypcje<i
         class="_1ukoz _183de _1f16d _121f1 _1m7tw" title="arrowhead"></i></h5></div> <div data-name="accordion-content"
-        class="_e2q26 _15m0v"><ul class="_3a4zn _1rj80 _12vfa"><li class="_1bmp9"><a href="/moje-allegro/zakupy/kupione"
-        data-analytics-clickable="" class="_sm3us _17qy1 _sizcr _1241k _x0toz">Aktywne
+        class="_e2q26 _15m0v"><ul class="_3a4zn _1rj80 _12vfa"><li class="_1bmp9"><a href="/myaccount/bid.php" data-analytics-clickable="" class="_sm3us _17qy1 _sizcr
+        _1241k">Kupione
         </a></li><li class="_1bmp9"><a href="/myaccount/bid.php" data-analytics-clickable="" class="_sm3us _17qy1 _sizcr
         _1241k">Licytuję
         </a></li><li class="_1bmp9"><a href="/myaccount/notwon.php" data-analytics-clickable="" class="_sm3us _17qy1
         _sizcr _1241k">Niekupione
-        </a></li></ul></div></div><div class="_d7szm"></div><div data-id="programy-znizkowe" class="_1gd95"><div
+        </a></li><li class="_1bmp9"><a href="/moje-allegro/zakupy/kupione"
+                                       data-analytics-clickable="" class="_sm3us _17qy1 _sizcr _1241k _x0toz">Aktywne
+                Subskrypcje
+        </a></li>       </ul></div></div><div class="_d7szm"></div><div data-id="programy-znizkowe" class="_1gd95"><div
         class="_anof8" data-name="accordion-panel" data-analytics-interaction=""
         data-analytics-interaction-label="close"><h5 href="#" class="_1f21n _tl3pi _1sjrk">Programy zniżkowe<i
         class="_1ukoz _183de _1f16d _121f1" title="arrowhead"></i></h5></div> <div data-name="accordion-content"
