@@ -23,35 +23,6 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-6 font-weight-light"><a href="#">fera-pl</a></div>
-                    <div class="col-6 text-right font-weight-light">co miesiąc — najbliższa dostawa 15.04.2019</div>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="media">
-                    <%--${pageContext.request.contextPath}--%>
-                    <img class="img-fluid" src="https://0.allegroimg.com/s512/031815/31afed8c466dba5c6b16ff48c160/ROYAL-CANIN-Giant-Puppy-15-kg" alt="" style="max-height: 200px;" />
-                    <div class="row" style="width: 100%">
-                        <div class="col-6">ROYAL CANIN GIANT PUPPY 15KG</div>
-                        <div class="col-3 text-right">2 sztuki</div>
-                        <div class="col-3 text-right">189,99 zł</div>
-                    </div>
-                </div>
-                <div class="row" style="border-top: 1px solid #eee; margin: 10px 0 0 0; padding: 20px 0 0 0;">
-                    <div style="border-right: 1px solid #eee">
-                        <a href="#" style="margin: 0 10px">Szczegóły</a>
-                    </div>
-                    <div>
-                        <a href="/mоjesubskrypcje" style="margin: 0 10px">Usuń</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="card">
-            <div class="card-header">
-                <div class="row">
                     <div class="col-6 font-weight-light"><a href="#">bdsklep_pl</a></div>
                     <div class="col-6 text-right font-weight-light">co miesiąc — najbliższa dostawa 17.04.2019</div>
                 </div>
