@@ -75,4 +75,10 @@ public class MainController {
         return mav;
     }
 
+    @RequestMapping(value = "/mоjesubskrypcje")
+    public ModelAndView getUserSubscription2(){
+        ModelAndView mav = new ModelAndView("mySubscriptions2");
+        return mav;
+    }
+
 }
