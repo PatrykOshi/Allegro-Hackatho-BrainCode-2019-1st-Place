@@ -65,8 +65,8 @@ public class MainController {
     @RequestMapping(value = "/mojesubskrypcje")
     public ModelAndView getUserSubscription(){
         ModelAndView mav = new ModelAndView("mySubscriptions");
-        List<Subscription> subscriptionList = subscriptionService.getSubscriptions(userService.getUser());
-        mav.addObject(subscriptionList);
+//        List<Subscription> subscriptionList = subscriptionService.getSubscriptions(userService.getUser());
+//        mav.addObject(subscriptionList);
         return mav;
     }
 
