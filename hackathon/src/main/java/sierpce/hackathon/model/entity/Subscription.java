@@ -17,6 +17,13 @@ public class Subscription{
     @Column
     private double maxPrice;
 
+    @Column
+    private String paymentMethod;
+
+    @Column
+    private String frequency;
+
+
     @ManyToOne()
     @JoinColumn(name = "fk_user")
     private User user;
