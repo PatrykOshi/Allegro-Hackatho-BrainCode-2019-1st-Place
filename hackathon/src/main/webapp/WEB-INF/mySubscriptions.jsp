@@ -42,7 +42,19 @@
                         <a href="#" style="margin: 0 10px">Szczegóły</a>
                     </div>
                     <div>
-                        <a href="/mоjesubskrypcje" style="margin: 0 10px">Usuń</a>
+                        <a data-toggle="collapse" href="#collapseExample"  style="margin: 0 10px">Usuń</a>
+                    </div>
+                    <div class="container collapse" id="collapseExample">
+                        <div class="row">
+                            <div class="col-5">
+                            </div>
+                            <div class="col-2 text-center">
+                                <i class="fas fa-exclamation fa-3x"></i>
+                                <p class="text-center">
+                                    Czy aby na pewno chcesz usunąć subskrypcję?
+                                <a class="text-center" href="/mоjesubskrypcje"  style="margin: 0 10px">Tak</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
