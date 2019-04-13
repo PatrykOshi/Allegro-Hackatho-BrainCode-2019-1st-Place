@@ -22,7 +22,7 @@
             var LOCALE = {
                 PL: {
                     countryCode: 'PL',
-                    title: 'Allegro.pl - WiÄ™cej niÅ¼ aukcje. Najlepsze oferty na najwiÄ™kszej platformie handlowej.'
+                    title: 'Allegro.pl - Więcej niż aukcje. Najlepsze oferty na największej platformie handlowej.'
                 }
             };
             var CONFIG = {
@@ -576,7 +576,8 @@ margin: 0 15px;">Przesyłka kurierska</p>
                            'm-visibility-hide': !dapf.shouldShowParcelDeliveryHint() }" translate="" style="margin: 4px 0 30px;">Wybierz opcje dla swojej subskrybcji</p>
                 <!---->
 
-                <button class="m-button m-button--secondary">Data subskrybcji</button><div ng-repeat="(methodIndex, method) in group.methods track by method.deliveryMethod.id" ng-hide="$ctrl.shouldHideDeliveryMethod(method.deliveryMethod.id)" class="m-margin-bottom-8 m-padding-top-8 m-padding-bottom-8" data-delivery-method-id="7203cb90-864c-4cda-bf08-dc883f0c78ad">
+                <button class="m-button m-button--secondary">Częstotliwość subskrypcji</button><div
+                    ng-repeat="(methodIndex, method) in group.methods track by method.deliveryMethod.id" ng-hide="$ctrl.shouldHideDeliveryMethod(method.deliveryMethod.id)" class="m-margin-bottom-8 m-padding-top-8 m-padding-bottom-8" data-delivery-method-id="7203cb90-864c-4cda-bf08-dc883f0c78ad">
                 <div class="m-grid m-flex-justify-between m-flex-items-center">
                     <div class="m-grid__col m-grid__col--8 m-grid__col--7@md m-flex-column">
                         <div class="m-grid m-flex-items-center">
@@ -613,11 +614,44 @@ margin: 0 15px;">1 miesiąc</p>
                     <!---->
                 </div></delivery-time>
                 <!---->
+                <div></div>
+                <button class="m-button m-button--secondary">Data subskrypcji</button><div
+                    ng-repeat="(methodIndex, method) in group.methods track by method.deliveryMethod.id" ng-hide="$ctrl.shouldHideDeliveryMethod(method.deliveryMethod.id)" class="m-margin-bottom-8 m-padding-top-8 m-padding-bottom-8" data-delivery-method-id="7203cb90-864c-4cda-bf08-dc883f0c78ad">
+                <div class="m-grid m-flex-justify-between m-flex-items-center">
+                    <div class="m-grid__col m-grid__col--8 m-grid__col--7@md m-flex-column">
+                        <div class="m-grid m-flex-items-center">
+                            <div class="m-grid__col m-grid__col--12"><p style="box-sizing: border-box;
+color: rgb(170, 170, 170);
+cursor: pointer;
+display: inline;
+font-family: &quot;Open Sans&quot;, sans-serif;
+font-size: 14px;
+font-weight: normal;
+height: auto;
+line-height: 20px;
+pointer-events: none;
+text-align: left;
+margin: 0 15px;box-sizing: border-box;
+color: rgb(170, 170, 170);
+cursor: pointer;
+display: inline;
+font-family: &quot;Open Sans&quot;, sans-serif;
+font-size: 14px;
+font-weight: normal;
+height: auto;
+line-height: 20px;
+pointer-events: none;
+text-align: left;
+margin: 0 15px;">13.04.2019</p>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
                 <!---->
 
                 <!---->
-            </div><p class="m-hint" style="margin: 20px 0 10px;">Terminy kolejnych subskrybcji</p><button class="m-button m-button--secondary" style="margin: 15px 0 0;">Cena maksymalna</button>
+            </div><button class="m-button m-button--secondary" style="margin: 0px 0 0;">Cena maksymalna</button>
 
                 <div class="m-field" style="/* margin: 40px 0 30px; */"><p style="box-sizing: border-box;
 color: rgb(170, 170, 170);
@@ -702,12 +736,15 @@ text-align: left;margin: 0 15px;gn: left;">200 zł</p>
   "ng-reflect-ng-if": "false"
 }--></info-modal></section><!----><!----><!----></add-to-cart-info-modal>
                                                         </m-custom-additional-element-above-primary-button></ng-transclude>
-                                                        <ng-transclude ng-transclude-slot="mPrimaryButton"><m-primary-button id="confirm-dapf-btn" ng-class="{'m-button--installments': dapf.isInstallmentsLimit()  || dapf.isInstallmentsSelected() || dapf.isInstallmentsOnlyFlag()}" m-on-click="dapf.submitDapf(purchase.dapfForm)" m-disabled="purchase.isUpdateInProgress || dapf.isDapfSubmitBtnDisabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress" m-spinner="purchase.isUpdateInProgress || dapf.isSubmitBtnSpinnerEnabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress"><button class="m-button m-button--primary m-button--wide m-button--spinner" type="button" ng-click="$ctrl.onClick()" ng-disabled="$ctrl.mDisabled">
+                                                        <ng-transclude
+                                                                ng-transclude-slot="mPrimaryButton"><m-primary-button
+                                                                id="confirm-dapf-btn"
+                                                                ng-class="{'m-button--installments': dapf.isInstallmentsLimit()  || dapf.isInstallmentsSelected() || dapf.isInstallmentsOnlyFlag()}" m-on-click="dapf.submitDapf(purchase.dapfForm)" m-disabled="purchase.isUpdateInProgress || dapf.isDapfSubmitBtnDisabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress" m-spinner="purchase.isUpdateInProgress || dapf.isSubmitBtnSpinnerEnabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress"><a href="http://localhost:8080/subskrypcja/sukces" class="m-button m-button--primary m-button--wide m-button--spinner" type="button" ng-click="$ctrl.onClick()" ng-disabled="$ctrl.mDisabled">
                                                             <span class="m-spinner m-button__spinner" ng-class="{'m-display-block': $ctrl.mSpinner}"></span>
                                                             <ng-transclude>
                                                                 <span>Potwierdź</span>
                                                             </ng-transclude>
-                                                        </button></m-primary-button></ng-transclude>
+                                                        </a></m-primary-button></ng-transclude>
                                                         <ng-transclude ng-transclude-slot="mCustomPrimaryButton"></ng-transclude>
                                                     </div>
                                                 </div>

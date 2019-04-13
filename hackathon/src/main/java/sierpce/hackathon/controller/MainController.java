@@ -68,9 +68,9 @@ public class MainController {
         return mav;
     }
 
-    @RequestMapping(value = "/subskrybcja/potwierdz")
+    @RequestMapping(value = "/subskrypcja/sukces")
     public ModelAndView saveSubscription(){
-        ModelAndView mav = new ModelAndView("redirect:/mojesubskrypcje");
+        ModelAndView mav = new ModelAndView("success");
         return mav;
     }
 
