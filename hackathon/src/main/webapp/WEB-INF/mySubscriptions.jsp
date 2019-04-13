@@ -30,7 +30,7 @@
             <div class="card-body">
                 <div class="media">
                     <%--${pageContext.request.contextPath}--%>
-                    <img class="img-fluid" src="https://a.allegroimg.com/s360/0115fa/3a3df96746c7bf7d882fdb17e04a" alt="" style="max-height: 200px;" />
+                    <img class="img-fluid" src="https://0.allegroimg.com/s512/031815/31afed8c466dba5c6b16ff48c160/ROYAL-CANIN-Giant-Puppy-15-kg" alt="" style="max-height: 200px;" />
                     <div class="row" style="width: 100%">
                         <div class="col-6">ROYAL CANIN GIANT PUPPY 15KG</div>
                         <div class="col-3 text-right">2 sztuki</div>
