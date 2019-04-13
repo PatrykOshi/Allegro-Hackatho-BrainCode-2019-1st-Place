@@ -1,8 +1,11 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib tagdir="/WEB-INF/tags/" prefix="h" %>
-<html class="m-type gr__localhost"><head><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+
+<html class="m-type gr__localhost"><head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
     <base href="https://allegro.pl/transaction-front/">        <title>Allegro.pl - WiÄ™cej niÅ¼ aukcje. Najlepsze oferty na najwiÄ™kszej platformie handlowej.</title>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -187,7 +190,7 @@
         <!----><div ng-if="$ctrl.shouldDisplayStepper" class="m-stepper">
             <div class="m-grid m-flex-items-end">
                 <!----><div ng-repeat="step in $ctrl.steps track by $index" class="m-grid__col" ng-class="{'m-display-none m-display-flex@sm': !step.current}">
-                <p class="m-type m-type--paragraph m-type--spacer-bottom m-color-orange" ng-class="{
+                <p class="m-type m-type--paragraph m-type--spacer-bottom m-color-gray" ng-class="{
                 'm-color-gray': step.future,
                 'm-color-orange': step.current,
                 'm-type--small': !step.current
@@ -199,7 +202,7 @@
                 'm-type--small': !step.current
         }">Opcje subskrybcji</p>
             </div><div ng-repeat="step in $ctrl.steps track by $index" class="m-grid__col m-display-none m-display-flex@sm" ng-class="{'m-display-none m-display-flex@sm': !step.current}">
-                <p class="m-type m-type--paragraph m-type--spacer-bottom m-color-gray m-type--small" ng-class="{
+                <p class="m-type m-type--paragraph m-type--spacer-bottom m-color-orange m-type--small" ng-class="{
                 'm-color-gray': step.future,
                 'm-color-orange': step.current,
                 'm-type--small': !step.current
@@ -214,11 +217,11 @@
             </div>
             <div class="m-grid">
                 <!----><div ng-repeat="progress in $ctrl.steps track by $index" class="m-grid__col">
-                <progress class="m-progress" max="1" ng-value="progress.completed || progress.current ? '1':'0'" value="1"></progress>
+                <progress class="m-progress" max="1" ng-value="progress.completed || progress.current ? '1':'0'" value="0"></progress>
             </div><!----><div ng-repeat="progress in $ctrl.steps track by $index" class="m-grid__col">
                 <progress class="m-progress" max="1" ng-value="progress.completed || progress.current ? '1':'0'" value="0"></progress>
             </div><div ng-repeat="progress in $ctrl.steps track by $index" class="m-grid__col">
-                <progress class="m-progress" max="1" ng-value="progress.completed || progress.current ? '1':'0'" value="0"></progress>
+                <progress class="m-progress" max="1" ng-value="progress.completed || progress.current ? '1':'0'" value="1"></progress>
             </div>
             </div>
         </div><!---->
@@ -244,69 +247,23 @@
                 <!---->
 
                 <!----><section id="shipment-data" scroll-to-me="'address'" class="shipment m-card" ng-if="dapf.shouldShowAddresses()">
-                <h2 class="m-heading m-heading--sm" translate="">Dane odbiorcy przesyłki</h2>
-                <p class="m-hint" ng-class="{ 'm-margin-bottom-0' : !purchase.buyer.hasAccountAddress,
-                           'm-visibility-hide': !dapf.shouldShowParcelDeliveryHint() }" translate="">Na ten adres zostanie wysłana Twoja przesyłka.</p>
+
+                        <div class="container">
+                            <div class="row">
+                                <p>
+                                    asdasdasdasddsaasdsadsad
+                                </p>
+                            </div>
+                        </div>
                 <!---->
 
                 <!----><addresses ng-if="::!purchase.data.buyer.guest" buyer-id="::purchase.data.buyer.id" buyer-email="::purchase.data.buyer.email" is-phone-verification-required="::purchase.isBuyerVerificationRequired" addresses="purchase.data.options.addresses" selected-address-id="purchase.activeAddress.id" preferred-address-id="purchase.data.options.userPreferences.addresses.shipping" on-address-change="dapf.handleAddressChange(selectedAddress, forceUpdate)" on-address-creation-in-progress="dapf.handleAddressCreationInProgress(isCreationInProgress)" on-address-update-in-progress="dapf.handleAddressUpdateInProgress(isUpdateInProgress)"><ng-form name="$ctrl.addressesForm" ng-show="$ctrl.shouldShowAddressesForm" class="ng-valid ng-valid-email ng-valid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-dirty">
                 <!---->
                 <!----><section ng-if="$ctrl.isAddressBookShown">
-                <m-soap-group><div class="m-soap-group" ng-class="$ctrl.mGroupClass" ng-transclude="" tabindex="0" role="radiogroup">
-                    <!----><address-soap ng-repeat="address in $ctrl.addresses track by $index" address="address" model="$ctrl.selectedAddressId" hide-delete-button="$ctrl.shouldHideDeleteButton()" is-disabled="$ctrl.isAddressDisabled(address.id)" on-click="$ctrl.handleChange(address)" on-edit="$ctrl.handleEdit(id)" on-delete="$ctrl.handleDelete(id)" ng-class="{'opened' : $ctrl.isAddressListOpened || $ctrl.selectedAddressId === address.id }" class="m-soap-group__soap m-margin-0 m-width-320@sm m-width-fluid opened"><m-soap m-model="$ctrl.model" m-value="$ctrl.address.id" m-ignore-soap-group="false" m-is-disabled="$ctrl.isDisabled" m-on-click="$ctrl.onClick()" class="m-soap-group__soap m-margin-right-0 m-margin-right-8@sm m-width-160@sm m-width-fluid"><div class="m-message-bubble m-align-text-left m-color-bg-yellow-500 m-width-320 m-soap-message m-visibility-hide" ng-class="$ctrl.getBubbleClass()">
-                    <!---->
-                    <div class="m-card m-type m-color-bg-yellow m-width-320">
-                        <!---->
-                        <!---->
-                    </div>
-                </div>
-                    <input id="m-soap-62-sr" name="m-soap-group-55" class="m-soap__radio" type="radio" ng-checked="$ctrl.isSelected()" aria-hidden="false" aria-labelledby="m-soap-62-label" ng-click="$ctrl.onClick()" checked="checked">
-
-                    <div class="m-soap m-display-flex" ng-class="{'m-soap--disabled': $ctrl.mIsDisabled, 'm-soap--big': $ctrl.mIsSoapBig}" aria-hidden="true">
-                        <svg width="0" height="0" style="position:absolute">
-                            <filter id="m-color-filter-black" color-interpolation-filters="sRGB">
-                                <feColorMatrix values="0 0 0 0 0.133 0 0 0 0 0.133 0 0 0 0 0.133 0 0 0 1 0"></feColorMatrix>
-                            </filter>
-                        </svg>
-                        <input id="m-soap-62" class="m-soap__radio" type="radio" ng-checked="$ctrl.isSelected()" aria-hidden="true" disabled="" checked="checked">
-                        <label id="m-soap-62-label" for="m-soap-62" aria-hidden="true" ng-class="$ctrl.getLabelClass()" ng-click="$ctrl.onClick()" ng-transclude="" class="m-soap__option m-soap__option--text m-width-fluid m-display-flex m-flex-column@sm m-flex-justify-between" style="
-    max-height: 110;
-">
-                            <div class="m-soap__title m-width-fluid m-display-flex m-flex-order-first@sm m-flex-column">
-                                <div class="address-wrapper" style="
-    /* max-height: 110; */
-">
-                                    <m-address m-first-name="$ctrl.address.firstName" m-last-name="$ctrl.address.lastName" m-company="$ctrl.address.company" m-street="$ctrl.address.street" m-city="$ctrl.address.city" m-zip-code="$ctrl.address.zipCode" m-phone-number="$ctrl.address.phoneNumber" m-country="$ctrl.getAllowedCountryName()"><!---->
-                                        <div class="m-type m-type--paragraph">
-                                            <!----><div ng-if="$ctrl.mFirstName || $ctrl.mLastName">Michal Sierpecki</div><!---->
-                                            <!---->
-                                            <!----><div ng-if="$ctrl.mStreet">Sierpecka 15a/9</div><!---->
-                                            <!----><div ng-if="$ctrl.mZipCode || $ctrl.mCity">06-600 Sierpce</div><!---->
-                                            <!---->
-                                            <!----><div ng-if="$ctrl.mPhoneNumber">+48 600 700 900</div><!---->
-                                            <!---->
-                                            <!---->
-                                            <!---->
-                                            <!---->
-                                        </div></m-address>
-                                    <!----><div class="buttons-wrapper" ng-if="$ctrl.shouldShowEditButtons()">
-                                    <button class="m-button m-button--secondary m-padding-0" type="button" ng-click="$ctrl.editAddress($event)" nga-action="Edit" nga-label="Address" translate="">edytuj</button>
-                                    <!---->
-                                </div><!---->
-                                </div>
-                            </div>
-                        </label>
-                    </div>
-                </m-soap>
-                    <!---->
-                </address-soap><!---->
-                </div>
+                <m-soap-group>
                 </m-soap-group>
                 <div class="m-grid">
-                    <div class="m-grid__col m-flex-column m-grid__col--6@sm m-grid__col--12 m-flex-items-start">
-                        <!---->
-                        <!----><button class="m-button m-button--secondary m-button--no-padding" ng-click="$ctrl.toggleNewAddressForm()" nga-action="Add" nga-label="Address" ng-if="$ctrl.shouldShowAddNewAddressBtn()" translate="">dodaj nowy adres</button><!---->
-                    </div>
+
                 </div>
             </section><!---->
 
@@ -314,24 +271,7 @@
 
                 <!---->
 
-                <section class="m-grid">
-                    <div class="m-grid__col m-flex-column m-grid__col--6@sm m-grid__col--12">
-                        <!---->
 
-                        <m-input class="m-margin-bottom-16" ng-class="{'m-margin-top-32': !$ctrl.shouldShowAddNewAddressBtn()}" m-type="email" m-model="$ctrl.buyerEmail" m-name="email" m-disabled="true" m-placeholder="E-mail" m-label="E-mail" m-hint="Na ten adres wyÅ›lemy szczegÃ³Å‚y zakupu"><div class="m-field">
-                            <input id="email_53" class="m-input m-field__input ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-email ng-valid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength" ng-class="{'m-field__input--invalid': $ctrl.shouldShowInputErrorOnBlur($ctrl.mFormModel[$ctrl.mName]),
-                      'm-field__input--valid': $ctrl.shouldShowInputValidOnBlur($ctrl.mFormModel[$ctrl.mName])}" name="email" type="email" inputmode="" ng-model="$ctrl.mModel" ng-required="$ctrl.mRequired" ui-mask="" model-view-value="" ui-options="{
-                clearOnBlur: false,
-                clearOnBlurPlaceholder: true
-           }" min="" max="" step="" placeholder="E-mail" ui-mask-placeholder="E-mail" ng-model-options="$ctrl.mModelOptions" ng-change="$ctrl.onChange()" ng-disabled="$ctrl.mDisabled" autocomplete="on" ng-attr-autofocus="{{$ctrl.mAutofocus}}" disabled="disabled">
-                            <!----><label class="m-field__placeholder" for="email_53" ng-if="$ctrl.mLabel">E-mail</label><!---->
-                            <!---->
-                        </div>
-                            <!----><div class="m-hint" ng-if="$ctrl.mHint">
-                                Na ten adres wyślemy szczegóły zakupu</div><!---->
-                            <!----></m-input>
-                    </div>
-                </section>
 
                 <!---->
 
@@ -347,229 +287,7 @@
                 </personal-id-form>
             </section><!---->
 
-                <!----><delivery-section ng-if="dapf.shouldShowDeliverySection()" id="delivery" class="m-card" orders="purchase.data.orders" purchase-options="purchase.data.options" service="purchase.data.service" user-address="purchase.activeAddress" dapf-form="purchase.dapfForm" env="purchase.env" selected-subscription-configuration="purchase.selectedSubscriptionConfiguration" freebox-logo-url="purchase.freeboxLogoUrl" is-update-purchase-in-progress="purchase.isUpdateInProgress" on-method-selected="dapf.handleDeliveryMethodSelected(order, selectedMethod)" on-message-to-seller-change="dapf.handleMessageToSellerChange()" on-additional-service-change="dapf.handleAdditionalServiceChange()" on-freebox-subscription-hint-add-click="dapf.handleFreeboxSubscriptionHintAddClick(planConfigurationId)" purchase-flags="purchase.data.metadata.flags" is-payment-in-progress="purchase.isPaymentInProgress" variant-show-spot-info-panel="purchase.variantShowSpotInfoPanel"><section id="delivery-data" class="delivery">
-                <h2 class="m-heading m-heading--sm m-margin-bottom-16 m-margin-bottom-32@md" translate="">Oferty i sposób dostawy</h2>
-                <section class="delivery-group">
-                    <ng-form name="delivery" class="ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength">
-                        <!----><delivery-bundle class="delivery-bundle seller-id-50219290" ng-repeat="order in $ctrl.orders track by $index" ng-class="'seller-id-' + order.seller.id" scroll-to-me="'order-' + order.id" index="$index" order="order" preferred-delivery-methods="$ctrl.purchaseOptions.userPreferences.delivery" user-address="$ctrl.userAddress" service="$ctrl.service" env="$ctrl.env" dapf-form="$ctrl.dapfForm" is-last="$last" has-evening-delivery-method="$ctrl.hasEveningDeliveryMethod" is-delivery-popover-opened="$ctrl.isDeliveryPopoverOpened" is-update-purchase-in-progress="$ctrl.isUpdatePurchaseInProgress" on-show-delivery-popover="$ctrl.showDeliveryPopover()" on-freebox-subscription-hint-add-click="$ctrl.onFreeboxSubscriptionHintAddClick({planConfigurationId:planConfigurationId})" selected-subscription-configuration="$ctrl.selectedSubscriptionConfiguration" freebox-logo-url="$ctrl.freeboxLogoUrl" on-method-selected="$ctrl.onMethodSelected({order: order, selectedMethod: selectedMethod})" on-message-to-seller-change="$ctrl.handleMessageToSellerChange()" on-additional-service-change="$ctrl.handleAdditionalServiceChange()" purchase-flags="$ctrl.purchaseFlags" is-payment-in-progress="purchase.isPaymentInProgress" variant-show-spot-info-panel="::$ctrl.variantShowSpotInfoPanel" offer-image-data-mark="$first ? 'vc' : undefined"><div class="m-margin-bottom-0 m-margin-bottom-16@md">
-                        <translate>sprzedający</translate>
-                        <m-seller-link m-id="$ctrl.order.seller.id" m-name="$ctrl.order.seller.login"><a ng-href="/uzytkownik/50219290/oceny" class="m-link m-link--non-visited" target="_self" href="/uzytkownik/50219290/oceny">
-                            <!----><span ng-if="$ctrl.mName">goodbook328</span><!---->
-                            <!---->
-                        </a>
-                        </m-seller-link>
-                    </div>
-                        <div class="items-to-buy-list">
-                            <!----><div ng-repeat="offer in $ctrl.order.offers track by $index">
-                            <m-offer-row m-title="offer.name" m-url="offer.viewUrl" m-image-url="offer.image.url" m-quantity="offer.quantity" m-quantity-type="offer.quantityType" m-amount="offer.price.amount" m-image-size="'sm'" m-offer-image-data-mark="$ctrl.offerImageDataMark"><div class="m-margin-bottom-8 m-margin-bottom-16@sm">
-                                <div class="offer-row">
-                                    <div class="m-grid">
-                                        <div ng-class="{
-                    'm-grid__col--11@sm m-grid__col--6@lg': $ctrl.mQuantityPickerOptions.enable &amp;&amp; $ctrl.mOnOfferDelete,
-                    'm-grid__col--10@sm m-grid__col--5@md': $ctrl.mQuantityPickerOptions.enable &amp;&amp; !$ctrl.mOnOfferDelete,
-                    'm-grid__col--10@sm m-grid__col--5@lg': !$ctrl.mQuantityPickerOptions.enable &amp;&amp; $ctrl.mOnOfferDelete,
-                    'm-grid__col--6@md m-grid__col--6@lg': !$ctrl.mQuantityPickerOptions.enable &amp;&amp; !$ctrl.mOnOfferDelete
-                 }" class="m-grid__col m-grid__col--12 m-flex-items-center                         m-flex-order-first@md m-grid__col--6@md m-grid__col--6@lg">
-                                            <m-offer-title m-title="$ctrl.mTitle" m-url="!$ctrl.mDisabled ? $ctrl.mUrl : ''" m-coins="$ctrl.totalCoins" m-installments="$ctrl.mInstallments" m-image-url="$ctrl.mImageUrl" m-hide-image="$ctrl.mHideImage" m-image-size="$ctrl.mImageSize" m-image-data-mark="$ctrl.mOfferImageDataMark" m-disabled="$ctrl.mDisabled"><div class="offer-title offer-title--table">
-                                                <div class="offer-title--row">
-                                                    <!----><div class="offer-title--cell" ng-if="!$ctrl.mHideImage">
-                                                    <a class="offer-title__photo offer-title__photo--sm" ng-class="{
-                    'offer-title__photo--non-clickable': !$ctrl.mUrl,
-                    'offer-title__photo--no-photo': $ctrl.isImageError,
-                    'offer-title__photo--opaque': $ctrl.mDisabled,
-                    'offer-title__photo--sm': $ctrl.mImageSize === 'sm'
-                }" ng-href="https://allegro.pl/oferta/royal-canin-giant-puppy-15-kg-7612747638" target="_self" href="https://allegro.pl/oferta/royal-canin-giant-puppy-15-kg-7612747638">
-                                                        <!----><img class="offer-title__image offer-title__image--sm" ng-class="{'offer-title__image--sm': $ctrl.mImageSize === 'sm'}" ng-if="::$ctrl.mImageUrl" ng-src="https://0.allegroimg.com/s192/031815/31afed8c466dba5c6b16ff48c160" alt="ROYAL CANIN Giant Puppy 15 kg" ng-attr-data-mark="{{$ctrl.mImageDataMark}}" m-on-load="$ctrl.onImageLoaded()" m-on-error="$ctrl.onImageError()" ng-show="$ctrl.isImageLoaded" src="https://0.allegroimg.com/s192/031815/31afed8c466dba5c6b16ff48c160" data-mark="vc"><!---->
-                                                        <!---->
-                                                    </a>
-                                                </div><!---->
-                                                    <div class="offer-title--cell">
-                                                        <!---->
-                                                        <div class="offer-title__title offer-title__title--hidden-photo" ng-class="{
-                    'offer-title__title--hidden-photo': !$ctrl.mHideImage,
-                    'm-color-gray-300': $ctrl.mDisabled}
-                 ">
-                                                            <!---->
-                                                            <!----><a ng-if="$ctrl.mUrl" class="m-link m-link--signal" ng-href="https://allegro.pl/oferta/royal-canin-giant-puppy-15-kg-7612747638" target="_self" href="https://allegro.pl/oferta/royal-canin-giant-puppy-15-kg-7612747638">ROYAL CANIN Giant Puppy 15 kg</a><!---->
-                                                            <!---->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            </m-offer-title>
-
-                                        </div>
-
-                                        <!---->
-
-
-
-                                        <div class="m-grid__col m-flex-order-first@md m-flex-items-center offer-quantity-column m-grid__col--3 m-grid__col--2@md m-align-text-center@sm" ng-class="{
-                    'm-grid__col--12 m-grid__col--6@sm m-grid__col--3@lg': $ctrl.mQuantityPickerOptions.enable &amp;&amp; $ctrl.mOnOfferDelete,
-                    'm-grid__col--12 m-grid__col--6@sm m-grid__col--4@md': $ctrl.mQuantityPickerOptions.enable &amp;&amp; !$ctrl.mOnOfferDelete,
-                    'm-grid__col--3 m-grid__col--2@md m-align-text-center@sm': !$ctrl.mQuantityPickerOptions.enable &amp;&amp; !$ctrl.mOnOfferDelete,
-                    'm-grid__col--6 m-grid__col--2@lg m-align-text-center@sm': !$ctrl.mQuantityPickerOptions.enable &amp;&amp; $ctrl.mOnOfferDelete
-                };">
-                                            <!----><offer-quantity ng-if="!$ctrl.mQuantityPickerOptions.enable" quantity="$ctrl.mQuantity" quantity-type="$ctrl.mQuantityType" class="m-color-gray" ng-class="{'m-color-gray-300': $ctrl.mDisabled}"><!----><span translate="" translate-n="::$ctrl.quantity" translate-plural=" pieces" ng-if="::($ctrl.isUnit() || !($ctrl.isPair() || $ctrl.isSet() || $ctrl.isBundle() || $ctrl.isItem()))">1 sztuka</span><!---->
-                                            <!---->
-                                            <!---->
-                                            <!---->
-                                            <!----></offer-quantity><!---->
-                                            <!---->
-                                        </div>
-
-                                        <div class="m-grid__col m-align-text-right m-flex-order-first@md m-flex-column offer-price--cell m-margin-top-8 m-margin-top-0@sm m-grid__col--9 m-grid__col--4@md" ng-class="{
-                    'm-grid__col m-grid__col--12 m-grid__col--6@sm m-grid__col--2@lg offer-price-column': $ctrl.mQuantityPickerOptions.enable &amp;&amp; $ctrl.mOnOfferDelete,
-                    'm-grid__col--12 m-grid__col--6@sm m-grid__col--3@md': $ctrl.mQuantityPickerOptions.enable &amp;&amp; !$ctrl.mOnOfferDelete,
-                    'm-grid__col--9 m-grid__col--4@md': !$ctrl.mQuantityPickerOptions.enable &amp;&amp; !$ctrl.mOnOfferDelete
-                 }">
-                                            <!---->
-                                            <div>
-                                                <m-price m-amount="$ctrl.totalAmount" m-is-primary="true" m-disabled="$ctrl.mDisabled"><span class="m-price m-price--primary" ng-class="{'m-price--primary': $ctrl.mIsPrimary, 'm-price--secondary': $ctrl.mIsSecondary, 'm-color-gray-300': $ctrl.mDisabled}">
-    191,<span class="m-price__fraction">00 zł‚</span>
-</span></m-price>
-                                            </div>
-                                            <!---->
-                                        </div>
-                                    </div>
-                                </div>
-                                <m-rebate-details-row class="m-margin-top-8 m-margin-top-16@sm" ng-class="{
-                            'offset-right' : !$ctrl.mQuantityPickerOptions.enable &amp;&amp; $ctrl.mOnOfferDelete,
-                            'offset-right-lg' : $ctrl.mQuantityPickerOptions.enable &amp;&amp; $ctrl.mOnOfferDelete
-                          }" m-message="$ctrl.mRebate.label.message" m-badge="$ctrl.mRebate.label.badge" m-rebated-offers-link="$ctrl.mRebate.label.link" m-price-rounding-difference="$ctrl.mPriceRoundingDifference" m-selected-quantity="$ctrl.mRebate.quantity" m-required-quantity="$ctrl.mRebate.requiredQuantity" m-rebate-type="$ctrl.mRebate.type" m-hide-info="$ctrl.mRebate.hideInfo" m-offer-type="$ctrl.mQuantityType" m-disabled="$ctrl.mDisabled"><!----></m-rebate-details-row>
-                            </div>
-                            </m-offer-row>
-                            <!---->
-                        </div><!---->
-                        </div>
-
-                        <div class="m-margin-bottom-0 m-margin-bottom-16@md">
-                            <section class="m-grid">
-                                <div class="shipping-methods m-grid__col m-grid__col--12 m-grid__col--9@md">
-                                    <delivery-methods-groups-list list-id="$ctrl.index" order="$ctrl.order" order-delivery="$ctrl.order.delivery" preferred-methods="$ctrl.preferredDeliveryMethods" locale="$ctrl.locale" service="$ctrl.service" user-address="$ctrl.userAddress" images-path="https://allegro.pl/transaction-front/images/" marker-clusterer-path="https://allegro.pl/transaction-front/js/markerclusterer.js" env="$ctrl.env" api-url="$ctrl.apiUrl" on-method-change="$ctrl.setSelectedMethod(selectedMethod)" on-add-freebox-subscription-hint-add-click="$ctrl.onFreeboxSubscriptionHintAddClick({planConfigurationId:planConfigurationId})" is-add-freebox-subscription-hint-enabled="$ctrl.isAddFreeboxSubscriptionHintEnabled()" show-popover="$ctrl.showPopover" selected-subscription-configuration="$ctrl.selectedSubscriptionConfiguration" freebox-logo-url="::$ctrl.freeboxLogoUrl.normal" purchase-flags="::$ctrl.purchaseFlags" is-disabled="$ctrl.isUpdatePurchaseInProgress" enabled-delivery-methods-ids="$ctrl.enabledDeliveryMethods" variant-show-spot-info-panel="::$ctrl.variantShowSpotInfoPanel"><!----><section class="delivery-wrapper" ng-if="!$ctrl.summaryMode">
-                                        <ng-form name="deliveryForm0" class="ng-pristine ng-invalid ng-invalid-required">
-                                            <delivery-hints order="$ctrl.order" freeboxlogourl="$ctrl.freeboxLogoUrl"><!---->
-                                                <!---->
-                                            </delivery-hints>
-                                            <ng-transclude ng-transclude-slot="logisticsCampaigns"></ng-transclude>
-                                            <!-- groups -->
-                                            <!----><div ng-repeat="(groupIndex, group) in $ctrl.deliveryMethodsGroups">
-                                            <!----><h4 ng-if="::group.name" ng-hide="$ctrl.shouldHideGroupName(group)" class="m-type m-type--caption m-margin-top-16 m-margin-bottom-8">
-                                            Kurier
-                                        </h4><!---->
-                                            <!-- methods per group -->
-                                            <!----><div ng-repeat="(methodIndex, method) in group.methods track by method.deliveryMethod.id" ng-hide="$ctrl.shouldHideDeliveryMethod(method.deliveryMethod.id)" class="m-margin-bottom-8 m-padding-top-8 m-padding-bottom-8" data-delivery-method-id="7203cb90-864c-4cda-bf08-dc883f0c78ad">
-                                            <div class="m-grid m-flex-justify-between m-flex-items-center">
-                                                <div class="m-grid__col m-grid__col--8 m-grid__col--7@md m-flex-column">
-                                                    <div class="m-grid m-flex-items-center">
-                                                        <div class="m-grid__col m-grid__col--12">
-                                                            <!---->
-                                                            <input class="m-choice m-choice--radio delivery-choice ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" ng-class="{
-                                        'm-choice--invalid': this['deliveryForm'+$ctrl.listId].$dirty &amp;&amp; this['deliveryForm'+$ctrl.listId]['deliveryMethod-'+$ctrl.listId].$invalid,
-                                        'm-choice--valid': this['deliveryForm'+$ctrl.listId].$dirty &amp;&amp; this['deliveryForm'+$ctrl.listId]['deliveryMethod-'+$ctrl.listId].$valid
-                                     }" name="deliveryMethod-0" type="radio" value="[object Object]" id="m-radio-0-0-0" ng-model="$ctrl.deliveryMethodModel" ng-value="method" ng-click="$ctrl.changeDeliveryMethod()" ng-disabled="$ctrl.shouldDisableDeliveryMethod()" required="" checked="checked" disabled="disabled">
-                                                            <label for="m-radio-0-0-0" class="m-label m-choice--align-middle">
-                                                                <!---->
-                                                                <!----><span ng-if="!$ctrl.isInternationalMethod(method)">Przesyłka kurierska</span><!---->
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="m-grid__col m-grid__col--4 m-flex-justify-end m-flex-justify-start@md m-flex-self-start" ng-show="method.deliveryMethod.id" ng-class="{'m-price-bargain__old-price m-color-gray': $ctrl.isFreeboxSelectedForMethod(method) &amp;&amp; $ctrl.isFreeboxCheaperThanOriginalPrice(method)}">
-                                                    <!---->
-                                                    <!----><span ng-if="$ctrl.hasCost(method) &amp;&amp; !$ctrl.hasNonZeroDiscount(method)" class="m-display-flex m-flex-items-center">
-                            <!---->
-                            <m-price m-amount="method.cost.amount" m-disabled="$ctrl.shouldDisableDeliveryMethod()" m-badge="{
-                                        color: $ctrl.deliveryMethodsWithBadge[method.deliveryMethod.id].priceColor,
-                                        bgColor: $ctrl.deliveryMethodsWithBadge[method.deliveryMethod.id].priceBgColor
-                                     }"><span class="m-price" ng-class="{'m-price--primary': $ctrl.mIsPrimary, 'm-price--secondary': $ctrl.mIsSecondary, 'm-color-gray-300': $ctrl.mDisabled}">
-    0,<span class="m-price__fraction">00 zł‚</span>
-</span></m-price>
-                        </span><!---->
-                                                    <!---->
-                                                </div>
-                                            </div>
-                                            <!---->
-                                            <delivery-time delivery-method="method" address-id="$ctrl.userAddress.id" disabled="$ctrl.shouldDisableDeliveryMethod()"><div class="delivery-time">
-                                                <!---->
-                                            </div></delivery-time>
-                                            <!---->
-
-                                            <!---->
-
-                                            <!---->
-                                        </div><!---->
-                                        </div><!----><div ng-repeat="(groupIndex, group) in $ctrl.deliveryMethodsGroups">
-                                            <!---->
-                                            <!-- methods per group -->
-                                            <!----><div ng-repeat="(methodIndex, method) in group.methods track by method.deliveryMethod.id" ng-hide="$ctrl.shouldHideDeliveryMethod(method.deliveryMethod.id)" class="m-margin-bottom-8 m-padding-top-8 m-padding-bottom-8 ng-hide" data-delivery-method-id="1fa56f79-4b6a-4821-a6f2-ca9c16d5c925">
-                                            <div class="m-grid m-flex-justify-between m-flex-items-center">
-                                                <div class="m-grid__col m-grid__col--8 m-grid__col--7@md m-flex-column">
-                                                    <div class="m-grid m-flex-items-center">
-                                                        <div class="m-grid__col m-grid__col--12">
-                                                            <!---->
-                                                            <input class="m-choice m-choice--radio delivery-choice ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" ng-class="{
-                                        'm-choice--invalid': this['deliveryForm'+$ctrl.listId].$dirty &amp;&amp; this['deliveryForm'+$ctrl.listId]['deliveryMethod-'+$ctrl.listId].$invalid,
-                                        'm-choice--valid': this['deliveryForm'+$ctrl.listId].$dirty &amp;&amp; this['deliveryForm'+$ctrl.listId]['deliveryMethod-'+$ctrl.listId].$valid
-                                     }" name="deliveryMethod-0" type="radio" id="m-radio-0-1-0" ng-model="$ctrl.deliveryMethodModel" ng-value="method" ng-click="$ctrl.changeDeliveryMethod()" ng-disabled="$ctrl.shouldDisableDeliveryMethod()" required="" value="[object Object]">
-                                                            <label for="m-radio-0-1-0" class="m-label m-choice--align-middle">
-                                                                <!---->
-                                                                <!----><span ng-if="!$ctrl.isInternationalMethod(method)">Inny sposÃ³b dostawy</span><!---->
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="m-grid__col m-grid__col--4 m-flex-justify-end m-flex-justify-start@md m-flex-self-start" ng-show="method.deliveryMethod.id" ng-class="{'m-price-bargain__old-price m-color-gray': $ctrl.isFreeboxSelectedForMethod(method) &amp;&amp; $ctrl.isFreeboxCheaperThanOriginalPrice(method)}">
-                                                    <!---->
-                                                    <!---->
-                                                    <!---->
-                                                </div>
-                                            </div>
-                                            <!---->
-                                            <delivery-time delivery-method="method" address-id="$ctrl.userAddress.id" disabled="$ctrl.shouldDisableDeliveryMethod()"><div class="delivery-time">
-                                                <!---->
-                                            </div></delivery-time>
-                                            <!---->
-
-                                            <!---->
-
-                                            <!---->
-                                        </div><!---->
-                                        </div><!---->
-
-                                            <!-- REMEMBER ABOUT THIS AS WELL!!!!!! -->
-                                            <!---->
-                                        </ng-form>
-                                    </section><!---->
-
-                                        <!-- SUMMARY VIEW -->
-                                        <!---->
-                                    </delivery-methods-groups-list>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="m-grid">
-                            <div class="m-grid__col m-grid__col--6@sm m-grid__col--12 m-flex-column" scroll-to-me="'message-' + $ctrl.order.id">
-                                <m-textarea class="message-to-seller" m-id="focus-message-0" m-form-model="$parent.delivery" m-model="$ctrl.order.messageToSeller" m-model-options="{debounce: 500}" m-name="messageToSeller" m-required="false" m-max-length="::$ctrl.validationRules.messageToSellerMaxLength" m-max-length-message="Wprowadzony tekst jest zbyt dÅ‚ugi." m-label="WaÅ¼ne informacje dla sprzedajÄ…cego" m-placeholder="WaÅ¼ne informacje dla sprzedajÄ…cego" m-on-input-update="$ctrl.handleMessageToSellerChange(value)"><div class="m-field">
-                                    <grammarly-ghost spellcheck="false"><div data-id="7954f479-e1cd-aa4f-aefa-fb77168e0e90" data-gramm_id="7954f479-e1cd-aa4f-aefa-fb77168e0e90" data-gramm="gramm" data-gramm_editor="true" class="gr_ver_2" gramm="true" contenteditable="true" style="position: absolute; color: transparent; overflow: hidden; white-space: pre-wrap; border-radius: 2px; box-sizing: border-box; height: 63px; width: 464px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 9.5px 12px; z-index: 0; border-width: 1px; border-style: solid; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255); top: 0px; left: 0px;"><span style="display: inline-block; font: 400 14px/21px &quot;Open Sans&quot;, sans-serif; color: transparent; overflow: hidden; text-align: left; float: initial; clear: none; box-sizing: border-box; vertical-align: baseline; white-space: pre-wrap; width: 100%; margin: 0px; padding: 0px; border: 0px; letter-spacing: normal; text-shadow: none; height: 61px;"></span><br></div></grammarly-ghost><textarea id="focus-message-0" class="m-input m-field__input m-field__input--multiline ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-valid-required" ng-class="{'m-field__input--invalid': $ctrl.shouldShowInputErrorOnBlur($ctrl.mFormModel[$ctrl.mName]),
-                  'm-field__input--valid': $ctrl.shouldShowInputValidOnBlur($ctrl.mFormModel[$ctrl.mName])}" name="messageToSeller" type="text" inputmode="" ng-model="$ctrl.mModel" ng-required="$ctrl.mRequired" ng-maxlength="1000" ui-options="{
-            clearOnBlur: false,
-            clearOnBlurPlaceholder: true
-        }" placeholder="Ważne informacje dla sprzedającego" ng-model-options="$ctrl.mModelOptions" ng-change="$ctrl.onChange()" ng-disabled="$ctrl.mDisabled" ng-attr-autofocus="{{$ctrl.mAutofocus}}" data-gramm="true" data-txt_gramm_id="7954f479-e1cd-aa4f-aefa-fb77168e0e90" data-gramm_id="7954f479-e1cd-aa4f-aefa-fb77168e0e90" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: 21px; font-size: 14px; transition: none 0s ease 0s; background: transparent !important;"></textarea><grammarly-btn><div class="_1BN1N Kzi1t _2DJZN" style="z-index: 2; transform: translate(433px, 32px);"><div class="_1HjH7"><div title="Protected by Grammarly" class="_3qe6h">&nbsp;</div></div></div></grammarly-btn>
-                                    <!----><label class="m-field__placeholder" for="focus-message-0" ng-if="$ctrl.mLabel">Ważne informacje dla sprzedającego</label><!---->
-                                </div>
-                                    <!---->
-                                    <!---->
-                                </m-textarea>
-                            </div>
-                        </div>
-                        <!---->
-                        <!----><performance-mark ng-if="$ctrl.isLast" type="FirstMeaningfulPaint" ng-version="7.2.3"></performance-mark><!---->
-                    </delivery-bundle><!---->
-                    </ng-form>
-                </section>
-            </section>
-            </delivery-section><!---->
+                <!----><!---->
 
                 <!---->
 
@@ -602,18 +320,8 @@
 
                                     <!----><m-summation ng-if="!$ctrl.hideDeliveryCost" class="m-margin-bottom-8" m-amount="$ctrl.purchaseCost.total" m-prepaid-amount="$ctrl.purchaseCost.prepaid"><section class="summation m-align-text-right">
                                     <!---->
-                                    <div>
-                                        <!----><span class="m-color-gray m-margin-right-8" translate="" ng-if="$ctrl.mDisplayHeader">DO ZAPŁATY</span><!---->
-                                        <m-price m-amount="$ctrl.mAmount" m-is-primary="true"><span class="m-price m-price--primary" ng-class="{'m-price--primary': $ctrl.mIsPrimary, 'm-price--secondary': $ctrl.mIsSecondary, 'm-color-gray-300': $ctrl.mDisabled}">
-    191,<span class="m-price__fraction">00 zł‚</span>
-</span></m-price>
-                                    </div>
-                                    <!----><div ng-if="$ctrl.displayPrepaidAmount" class="m-color-gray">
-                                    <translate>w tym płatne z góry</translate>
-                                    <m-price m-amount="$ctrl.mPrepaidAmount"><span class="m-price" ng-class="{'m-price--primary': $ctrl.mIsPrimary, 'm-price--secondary': $ctrl.mIsSecondary, 'm-color-gray-300': $ctrl.mDisabled}">
-    0,<span class="m-price__fraction">00 zł‚</span>
-</span></m-price>
-                                </div><!---->
+
+                                    <!----><!---->
                                     <!---->
                                 </section>
 
@@ -629,10 +337,7 @@
                 m-grid__col--12
                 m-grid__col--6@md m-grid__col--offset-6@md
                 m-hint m-margin-top-0 m-margin-bottom-8">
-                                        <ng-transclude ng-transclude-slot="mPrimaryAside" class="m-width-fluid m-align-text-right"><!----><m-primary-aside ng-if="purchase.isCartProcess">
-                                            <translate>Będziesz mógł sprawdzić wszystkie dane zanim dokonasz zakupu.</translate>
-                                            <!---->
-                                        </m-primary-aside><!----></ng-transclude>
+
                                     </div>
                                 </div><!---->
                                     <div class="m-grid">
@@ -651,7 +356,7 @@
                                                         <ng-transclude ng-transclude-slot="mPrimaryButton"><m-primary-button id="confirm-dapf-btn" ng-class="{'m-button--installments': dapf.isInstallmentsLimit()  || dapf.isInstallmentsSelected() || dapf.isInstallmentsOnlyFlag()}" m-on-click="dapf.submitDapf(purchase.dapfForm)" m-disabled="purchase.isUpdateInProgress || dapf.isDapfSubmitBtnDisabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress" m-spinner="purchase.isUpdateInProgress || dapf.isSubmitBtnSpinnerEnabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress"><button class="m-button m-button--primary m-button--wide m-button--spinner" type="button" ng-click="$ctrl.onClick()" ng-disabled="$ctrl.mDisabled">
                                                             <span class="m-spinner m-button__spinner" ng-class="{'m-display-block': $ctrl.mSpinner}"></span>
                                                             <ng-transclude>
-                                                                <span>Podsumowanie subskrypcji</span>
+                                                                <span>Potwierdź</span>
                                                             </ng-transclude>
                                                         </button></m-primary-button></ng-transclude>
                                                         <ng-transclude ng-transclude-slot="mCustomPrimaryButton"></ng-transclude>
