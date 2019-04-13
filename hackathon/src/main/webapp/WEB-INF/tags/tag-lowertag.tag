@@ -1,4 +1,5 @@
-    </div> </div></div></div></div></div></div> </div></div></div> </div></div></div><div
+<%@tag pageEncoding="UTF-8"%>
+</div> </div></div></div></div></div></div> </div></div></div> </div></div></div><div
         data-box-name="metrum-footer-partial" data-prototype-id="layout.container" data-prototype-version="7.0"
         data-skin-class-name="metrum-footer-partial" data-analytics-category="layout.container" data-analytics-tags=""
         data-analytics-groups="%5B%22allegro.myAllegro%22%2C%22footer%22%5D"><a name="metrum-footer-partial"></a><div
