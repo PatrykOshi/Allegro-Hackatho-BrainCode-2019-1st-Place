@@ -36,6 +36,7 @@ public class MainController {
         ModelAndView mav = new ModelAndView("index");
         return mav;
     }
+<<<<<<< HEAD
 
     @GetMapping(name = "/produkt")
     public ModelAndView getProductPage(){
@@ -69,7 +70,5 @@ public class MainController {
         mav.addObject(subscriptionList);
         return mav;
     }
-
-
 
 }
