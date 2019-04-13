@@ -193,8 +193,14 @@
                 'm-color-gray': step.future,
                 'm-color-orange': step.current,
                 'm-type--small': !step.current
+        }">Opcje subskrybcji</p>
+            </div><div ng-repeat="step in $ctrl.steps track by $index" class="m-grid__col m-display-none m-display-flex@sm" ng-class="{'m-display-none m-display-flex@sm': !step.current}">
+                <p class="m-type m-type--paragraph m-type--spacer-bottom m-color-gray m-type--small" ng-class="{
+                'm-color-gray': step.future,
+                'm-color-orange': step.current,
+                'm-type--small': !step.current
         }">Podsumowanie</p>
-            </div><!---->
+            </div>
 
                 <div class="m-grid__col m-flex-justify-end m-display-none@sm">
                     <p class="m-type m-type--paragraph m-type--small m-color-gray m-type--spacer-bottom">
@@ -207,7 +213,9 @@
                 <progress class="m-progress" max="1" ng-value="progress.completed || progress.current ? '1':'0'" value="1"></progress>
             </div><!----><div ng-repeat="progress in $ctrl.steps track by $index" class="m-grid__col">
                 <progress class="m-progress" max="1" ng-value="progress.completed || progress.current ? '1':'0'" value="0"></progress>
-            </div><!---->
+            </div><div ng-repeat="progress in $ctrl.steps track by $index" class="m-grid__col">
+                <progress class="m-progress" max="1" ng-value="progress.completed || progress.current ? '1':'0'" value="0"></progress>
+            </div>
             </div>
         </div><!---->
     </m-stepper></header>

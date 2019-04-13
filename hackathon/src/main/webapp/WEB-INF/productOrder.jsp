@@ -643,7 +643,7 @@
                                                         <ng-transclude ng-transclude-slot="mPrimaryButton"><m-primary-button id="confirm-dapf-btn" ng-class="{'m-button--installments': dapf.isInstallmentsLimit()  || dapf.isInstallmentsSelected() || dapf.isInstallmentsOnlyFlag()}" m-on-click="dapf.submitDapf(purchase.dapfForm)" m-disabled="purchase.isUpdateInProgress || dapf.isDapfSubmitBtnDisabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress" m-spinner="purchase.isUpdateInProgress || dapf.isSubmitBtnSpinnerEnabled || dapf.isGuestAddressUpdateInProgress || dapf.isInvoiceUpdateInProgress"><button class="m-button m-button--primary m-button--wide m-button--spinner" type="button" ng-click="$ctrl.onClick()" ng-disabled="$ctrl.mDisabled">
                                                             <span class="m-spinner m-button__spinner" ng-class="{'m-display-block': $ctrl.mSpinner}"></span>
                                                             <ng-transclude>
-                                                                <span>Podsumowanie subskrypcji</span>
+                                                                <span>Przejdź dalej</span>
                                                             </ng-transclude>
                                                         </button></m-primary-button></ng-transclude>
                                                         <ng-transclude ng-transclude-slot="mCustomPrimaryButton"></ng-transclude>
