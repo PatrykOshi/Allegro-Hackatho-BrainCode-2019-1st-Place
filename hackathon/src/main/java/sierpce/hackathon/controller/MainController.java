@@ -33,7 +33,7 @@ public class MainController {
     @RequestMapping
     //TODO api + attributes
     public ModelAndView getMainPage(){
-        ModelAndView mav = new ModelAndView("index");
+        ModelAndView mav = new ModelAndView("subscriptionDetails");
         return mav;
     }
 
