@@ -16,36 +16,36 @@ public class MainController {
         ModelAndView mav = new ModelAndView("index");
         return mav;
     }
-
-    @GetMapping(name = "/produkt")
-    public ModelAndView getProductPage(){
-        ModelAndView mav = new ModelAndView("productView");
-        return mav;
-    }
-
-    @GetMapping(name = "/subskrybcja/edytuj")
-    public ModelAndView getSubscriptionSummary(){
-        ModelAndView mav = new ModelAndView("productOrder");
-        return mav;
-    }
-
-    @GetMapping(name = "/subskrypcja/podsumowanie")
-    public ModelAndView get(){
-        ModelAndView mav = new ModelAndView("productOrderSummary");
-        return mav;
-    }
-
-    @PostMapping("/subskrybcja/potwierdz")
-    public ModelAndView saveSubscription(){
-        ModelAndView mav = new ModelAndView("redirect:/mojesubskrypcje");
-        return mav;
-    }
-
-    @GetMapping(name = "/mojesubskrypcje")
-    public ModelAndView getUserSubscription(){
-        ModelAndView mav = new ModelAndView("mySubscriptions");
-        return mav;
-    }
+//
+//    @GetMapping(name = "/produkt")
+//    public ModelAndView getProductPage(){
+//        ModelAndView mav = new ModelAndView("productView");
+//        return mav;
+//    }
+//
+//    @GetMapping(name = "/subskrybcja/edytuj")
+//    public ModelAndView getSubscriptionSummary(){
+//        ModelAndView mav = new ModelAndView("productOrder");
+//        return mav;
+//    }
+//
+//    @GetMapping(name = "/subskrypcja/podsumowanie")
+//    public ModelAndView get(){
+//        ModelAndView mav = new ModelAndView("productOrderSummary");
+//        return mav;
+//    }
+//
+//    @PostMapping("/subskrybcja/potwierdz")
+//    public ModelAndView saveSubscription(){
+//        ModelAndView mav = new ModelAndView("redirect:/mojesubskrypcje");
+//        return mav;
+//    }
+////
+////    @GetMapping(name = "/mojesubskrypcje")
+////    public ModelAndView getUserSubscription(){
+////        ModelAndView mav = new ModelAndView("mySubscriptions");
+////        return mav;
+////    }
 
 
 
