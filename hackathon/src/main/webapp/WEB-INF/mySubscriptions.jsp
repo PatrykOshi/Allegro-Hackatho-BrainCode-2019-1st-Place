@@ -23,7 +23,7 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-6 font-weight-light"><a href="#">fera-pl</a></div>
+                    <div class="col-6 font-weight-light"><a href="#">goodbook328</a></div>
                     <div class="col-6 text-right font-weight-light">co miesiąc — najbliższa dostawa 15.04.2019</div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     <div class="row" style="width: 100%">
                         <div class="col-6">ROYAL CANIN GIANT PUPPY 15KG</div>
                         <div class="col-3 text-right">2 sztuki</div>
-                        <div class="col-3 text-right">189,99 zł</div>
+                        <div class="col-3 text-right">191,00 zł</div>
                     </div>
                 </div>
                 <div class="row" style="border-top: 1px solid #eee; margin: 10px 0 0 0; padding: 20px 0 0 0;">
