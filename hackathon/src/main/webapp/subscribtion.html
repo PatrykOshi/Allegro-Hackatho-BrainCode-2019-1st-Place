@@ -245,7 +245,7 @@
                            'm-visibility-hide': !dapf.shouldShowParcelDeliveryHint() }" translate="" style="margin: 4px 0 30px;">Wybierz opcje dla swojej subskrybcji</p>
                     <!---->
 
-                    <button class="m-button m-button--secondary">Data subskrybcji</button><div ng-repeat="(methodIndex, method) in group.methods track by method.deliveryMethod.id" ng-hide="$ctrl.shouldHideDeliveryMethod(method.deliveryMethod.id)" class="m-margin-bottom-8 m-padding-top-8 m-padding-bottom-8" data-delivery-method-id="7203cb90-864c-4cda-bf08-dc883f0c78ad">
+                    <button class="m-button m-button--secondary">Częstotliwość subskrybcji</button><div ng-repeat="(methodIndex, method) in group.methods track by method.deliveryMethod.id" ng-hide="$ctrl.shouldHideDeliveryMethod(method.deliveryMethod.id)" class="m-margin-bottom-8 m-padding-top-8 m-padding-bottom-8" data-delivery-method-id="7203cb90-864c-4cda-bf08-dc883f0c78ad">
                     <div class="m-grid m-flex-justify-between m-flex-items-center">
                         <div class="m-grid__col m-grid__col--8 m-grid__col--7@md m-flex-column">
                             <div class="m-grid m-flex-items-center">
@@ -301,7 +301,14 @@
                     <!---->
 
                     <!---->
-                </div><p class="m-hint" style="margin: 20px 0 10px;">Terminy kolejnych subskrybcji</p><button class="m-button m-button--secondary" style="margin: 15px 0 0;">Cena</button>
+                </div><button class="m-button m-button--secondary" style="margin: 15px 0 0;">Data subskrybcji</button><div class="m-field" style="/* margin: 40px 0 30px; */">
+                    <grammarly-ghost spellcheck="false"><div data-id="7954f479-e1cd-aa4f-aefa-fb77168e0e90" data-gramm_id="7954f479-e1cd-aa4f-aefa-fb77168e0e90" data-gramm="gramm" data-gramm_editor="true" class="gr_ver_2" gramm="true" contenteditable="true" style="position: absolute; color: transparent; overflow: hidden; white-space: pre-wrap; border-radius: 2px; box-sizing: border-box; height: 63px; width: 464px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 9.5px 12px; z-index: 0; border-width: 1px; border-style: solid; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255); top: 0px; left: 0px;"><span style="display: inline-block; font: 400 14px/21px &quot;Open Sans&quot;, sans-serif; color: transparent; overflow: hidden; text-align: left; float: initial; clear: none; box-sizing: border-box; vertical-align: baseline; white-space: pre-wrap; width: 100%; margin: 0px; padding: 0px; border: 0px; letter-spacing: normal; text-shadow: none; height: 61px;"></span><br></div></grammarly-ghost><input id="focus-message-0" class="date-of-subscription m-input m-field__input m-field__input--multiline ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-valid-required" ng-class="{'m-field__input--invalid': $ctrl.shouldShowInputErrorOnBlur($ctrl.mFormModel[$ctrl.mName]),
+                  'm-field__input--valid': $ctrl.shouldShowInputValidOnBlur($ctrl.mFormModel[$ctrl.mName])}" name="messageToSeller" type="date" inputmode="" ng-model="$ctrl.mModel" ng-required="$ctrl.mRequired" ng-maxlength="1000" ui-options="{
+            clearOnBlur: false,
+            clearOnBlurPlaceholder: true
+        }" placeholder="Data odnowienia subskrybcji" ng-model-options="$ctrl.mModelOptions" ng-change="$ctrl.onChange()" ng-disabled="$ctrl.mDisabled" ng-attr-autofocus="{{$ctrl.mAutofocus}}" data-gramm="true" data-txt_gramm_id="7954f479-e1cd-aa4f-aefa-fb77168e0e90" data-gramm_id="7954f479-e1cd-aa4f-aefa-fb77168e0e90" spellcheck="false" data-gramm_editor="true" style="z-index: auto; position: relative; line-height: 21px; font-size: 14px; transition: none 0s ease 0s; background: transparent !important;" value="2019-04-13" min="2019-04-13" max="2019-05-13"><grammarly-btn><div class="_1BN1N Kzi1t _2DJZN" style="z-index: 2; transform: translate(433px, 32px);"><div class="_1HjH7"><div title="Protected by Grammarly" class="_3qe6h">&nbsp;</div></div></div></grammarly-btn>
+                    <!----><label class="m-field__placeholder" for="focus-message-0" ng-if="$ctrl.mLabel">Data</label><!---->
+                </div><p class="m-hint" style="margin: 20px 0 10px;">Termin rozpoczęcia subskrybcji</p><button class="m-button m-button--secondary" style="margin: 15px 0 0;">Cena</button>
 
                     <div class="m-field" style="/* margin: 40px 0 30px; */">
                         <grammarly-ghost spellcheck="false"><div data-id="7954f479-e1cd-aa4f-aefa-fb77168e0e90" data-gramm_id="7954f479-e1cd-aa4f-aefa-fb77168e0e90" data-gramm="gramm" data-gramm_editor="true" class="gr_ver_2" gramm="true" contenteditable="true" style="position: absolute; color: transparent; overflow: hidden; white-space: pre-wrap; border-radius: 2px; box-sizing: border-box; height: 63px; width: 464px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 9.5px 12px; z-index: 0; border-width: 1px; border-style: solid; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255); top: 0px; left: 0px;"><span style="display: inline-block; font: 400 14px/21px &quot;Open Sans&quot;, sans-serif; color: transparent; overflow: hidden; text-align: left; float: initial; clear: none; box-sizing: border-box; vertical-align: baseline; white-space: pre-wrap; width: 100%; margin: 0px; padding: 0px; border: 0px; letter-spacing: normal; text-shadow: none; height: 61px;"></span><br></div></grammarly-ghost><input id="focus-message-0" class="m-input m-field__input m-field__input--multiline ng-pristine ng-untouched ng-valid ng-empty ng-valid-pattern ng-valid-minlength ng-valid-maxlength ng-valid-required" ng-class="{'m-field__input--invalid': $ctrl.shouldShowInputErrorOnBlur($ctrl.mFormModel[$ctrl.mName]),
@@ -489,6 +496,9 @@
         } else {
             $box.prop("checked", false);
         }
+    });
+    $(function() {
+        $( ".date-of-subscription" ).datepicker({ dateFormat: 'yy-mm-dd'});
     });
 </script>
 <script>
