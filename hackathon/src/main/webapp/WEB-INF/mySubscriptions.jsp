@@ -23,8 +23,8 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-6 font-weight-light">fera-pl</div>
-                    <div class="col-6 text-right font-weight-light">najbliższa dostawa 17.04.2019</div>
+                    <div class="col-6 font-weight-light"><a href="#">fera-pl</a></div>
+                    <div class="col-6 text-right font-weight-light">co miesiąc — najbliższa dostawa 15.04.2019</div>
                 </div>
             </div>
             <div class="card-body">
@@ -52,8 +52,8 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-6 font-weight-light">bdsklep_pl</div>
-                    <div class="col-6 text-right font-weight-light">najbliższa dostawa 21.04.2019</div>
+                    <div class="col-6 font-weight-light"><a href="#">bdsklep_pl</a></div>
+                    <div class="col-6 text-right font-weight-light">co miesiąc — najbliższa dostawa 17.04.2019</div>
                 </div>
             </div>
             <div class="card-body">
@@ -81,8 +81,8 @@
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="col-6 font-weight-light">m-importer</div>
-                    <div class="col-6 text-right font-weight-light">następna dostawa 15.04.2019</div>
+                    <div class="col-6 font-weight-light"><a href="#">m-importer</a></div>
+                    <div class="col-6 text-right font-weight-light">co 2 tygodnie — następna dostawa 21.04.2019</div>
                 </div>
             </div>
             <div class="card-body">
