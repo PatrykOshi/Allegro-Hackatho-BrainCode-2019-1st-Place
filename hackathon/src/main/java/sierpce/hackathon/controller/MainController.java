@@ -40,12 +40,17 @@ public class MainController {
     @RequestMapping(value = "/produkt")
     public ModelAndView getProductPage(){
         ModelAndView mav = new ModelAndView("productView");
+        mav.addObject("product",productService.getProduct());
         return mav;
     }
 
     @RequestMapping(value = "/subskrybcja/edytuj")
     public ModelAndView getSubscriptionSummary(){
         ModelAndView mav = new ModelAndView("productOrder");
+        Subscription subscription = new Subscription();
+        subscription.setUser(userService.getUser());
+        subscription.setProduct(productService.getProduct());
+        mav.addObject(subscription);
         return mav;
     }
 
