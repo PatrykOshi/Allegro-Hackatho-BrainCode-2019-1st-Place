@@ -1,3 +1,6 @@
+![Alt text](http://katalina.pl/Content/logo/allegro.jpg?raw=true "Title")
+
+
 Allegro Subskrypcje
 =====
 
